@@ -3,6 +3,8 @@ public class Person
     private int age;
     public string FirstName { get; set; }
     public string LastName { get; set; }
+    public string Address { get; set; }
+    public string PhoneNumber { get; set; }
     public int Age { 
         get { return age;} 
         set 
@@ -19,8 +21,6 @@ public class Person
                 age = value;
         } 
     }
-    public string Address { get; set; }
-    public string PhoneNumber { get; set; }
     public Person(string firstName, string lastName, string phoneNumber, string address, int age)
     {
         FirstName = firstName;

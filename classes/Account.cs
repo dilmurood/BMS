@@ -1,4 +1,4 @@
-public class Account :  IComparable<Account>
+public class Account
 {
     private decimal balance;
     private static int nextId = 1;
@@ -7,8 +7,9 @@ public class Account :  IComparable<Account>
     { 
         get{return balance;} set{balance = value;}
     }
-
     private DateTime createdDate;
+
+    //Composition prefered over inheritence
     public Person person;
     public Account(Person person, decimal initialBalance)
     {
@@ -16,7 +17,6 @@ public class Account :  IComparable<Account>
         createdDate = DateTime.Now;
         AccountId = nextId++;
         this.person = person;
-        //Console.WriteLine(ToString());
     }
     public void Deposit(decimal amount)
     {
@@ -45,9 +45,5 @@ public class Account :  IComparable<Account>
     public override string ToString()
     {
         return $" {person} \ncreated date: {createdDate}";
-    }
-    public int CompareTo(Account? other)
-    {
-        return AccountId.CompareTo(other?.AccountId);
     }
 }
