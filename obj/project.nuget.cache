@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JmrcuQoKR9a55ihenHomV8ejs5NDOo8V23psM+UcU+yLszyb6xrETaBPQuY87AHHeKsnYTvGAvS5UODjhhi9Ng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Desktop\\BMS\\BMS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.27\\microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.27\\microsoft.windowsdesktop.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.27\\microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512",
+    "C:\\Users\\Asus\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.27\\microsoft.netcore.app.host.win-x64.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}

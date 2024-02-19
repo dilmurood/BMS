@@ -1,0 +1,14 @@
+C:\Users\Asus\Desktop\BMS\bin\Debug\net8.0\BMS.exe
+C:\Users\Asus\Desktop\BMS\bin\Debug\net8.0\BMS.deps.json
+C:\Users\Asus\Desktop\BMS\bin\Debug\net8.0\BMS.runtimeconfig.json
+C:\Users\Asus\Desktop\BMS\bin\Debug\net8.0\BMS.dll
+C:\Users\Asus\Desktop\BMS\bin\Debug\net8.0\BMS.pdb
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.AssemblyInfo.cs
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.dll
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\refint\BMS.dll
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.pdb
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\BMS.genruntimeconfig.cache
+C:\Users\Asus\Desktop\BMS\obj\Debug\net8.0\ref\BMS.dll
