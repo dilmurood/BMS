@@ -36,12 +36,12 @@ public class Account
     {
         if (amount > balance)
             Console.WriteLine("Not enough money try lower amount.");
-        else if (amount < 0)
-            Console.WriteLine("You cannot withdraw negative amount of money.");
+        else if (amount < 10)
+            Console.WriteLine("You cannot withdraw money less than 10$.");
         else 
         {
             balance -= amount;
-            Console.WriteLine("Money is successfully withdrawn... \nremaining balance : " + balance);
+            Console.WriteLine("Money is successfully withdrawn... \nremaining balance : " + balance.ToString("0.00"));
             return true;
         }
 
@@ -50,6 +50,6 @@ public class Account
 
     public override string ToString()
     {
-        return $"created date: {createdDate} \nBalance: {balance} \npurpse: {purpose}";
+        return $"created date: {createdDate} \npurpse: {purpose}";
     }
 }

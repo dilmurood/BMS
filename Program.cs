@@ -6,10 +6,6 @@
     {
         Person p1 = new Person("Dilmurod", "Adam", "+555555555", "Tashkent, Uzbeksitan", "AC1731845", 21);
         Person p2 = new Person("Don", "Pon", "+7777777", "Tashkent, Uzbeksitan", "AC17318455", 55);
-        //Person p3 = new Person("Mania", "Fania", "+55856966", "Tashkent, Uzbeksitan", "AC17311845", 21);
-        //Person p4 = new Person("Killey", "Milley", "+9999999999", "Tashkent, Uzbeksitan", "AC173118455", 21);
-        //Person p5 = new Person("Alex", "Malex", "+2111111121", "Tashkent, Uzbeksitan", "AC173118455", 21);
-        //Person p6 = new Person("Dima", "Tima", "+000000000000", "Tashkent, Uzbeksitan", "AC173118455", 31);
 
         Account account = new(5000.0M, "savings");
         Account account2 = new(6000.0M, "credit");
@@ -129,7 +125,7 @@
                 int input = Convert.ToInt32(Console.ReadLine());
                 if (input == 1)
                 {
-                    Console.WriteLine("YOUR BALANCE: " + account.Balance + "$.");
+                    Console.WriteLine("YOUR BALANCE: " + account.Balance.ToString("0.00") + "$.");
                     Console.WriteLine("Enter withdraw amount");
                     decimal amount = Convert.ToDecimal(Console.ReadLine());
                     flag = !account.Withdraw(amount);
