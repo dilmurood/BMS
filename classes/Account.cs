@@ -8,17 +8,17 @@ public class Account
         get{return balance;} set{balance = value;}
     }
     private DateTime createdDate;
+    public string purpose;
 
     //Composition prefered over inheritence
-    public Person person;
-    public Account(Person person, decimal initialBalance)
+    public Account(decimal initialBalance, string purpose)
     {
         balance = initialBalance;
+        this.purpose = purpose;
         createdDate = DateTime.Now;
-        AccountId = nextId++;
-        this.person = person;
+        AccountId = 1000 + nextId++;
     }
-    public void Deposit(decimal amount)
+    public bool Deposit(decimal amount)
     {
         if(amount < 0)
             Console.WriteLine("You cannot deposit negative amount of money");
@@ -26,10 +26,13 @@ public class Account
         {
             balance += amount;
             Console.WriteLine("Money is successfully deposited... \nUPDATED BALANCE : " + balance);
+            return true;
         }
+
+        return false;
     }
 
-    public void Withdraw(decimal amount)
+    public bool Withdraw(decimal amount)
     {
         if (amount > balance)
             Console.WriteLine("Not enough money try lower amount.");
@@ -38,12 +41,15 @@ public class Account
         else 
         {
             balance -= amount;
-            Console.WriteLine("Money is successfully withdrawn... remaining balance : " + balance);
+            Console.WriteLine("Money is successfully withdrawn... \nremaining balance : " + balance);
+            return true;
         }
+
+        return false;
     }
 
     public override string ToString()
     {
-        return $" {person} \ncreated date: {createdDate}";
+        return $"created date: {createdDate} \nBalance: {balance} \npurpse: {purpose}";
     }
 }

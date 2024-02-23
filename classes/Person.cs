@@ -1,6 +1,7 @@
 public class Person
 {
     private int age;
+    public string CitizenshipId { get; set; }
     public string FirstName { get; set; }
     public string LastName { get; set; }
     public string Address { get; set; }
@@ -21,16 +22,19 @@ public class Person
                 age = value;
         } 
     }
-    public Person(string firstName, string lastName, string phoneNumber, string address, int age)
+
+    public List<Account> accounts = new List<Account>();
+    public Person(string firstName, string lastName, string phoneNumber, string address, string citizenshipId, int age)
     {
         FirstName = firstName;
         LastName = lastName;
         PhoneNumber = phoneNumber;
         Address = address;
+        CitizenshipId = citizenshipId;
         this.age = age;
     }
+  
     public override string ToString()
-    {
-        return $"\nMr/Ms {FirstName} {LastName} \nContact mumber {PhoneNumber},  \nage: {Age}  \naddress: {Address}";
-    }
+        => $"\nMr/Ms {FirstName} {LastName} \nContact mumber {PhoneNumber},  \nage: {Age}  \naddress: {Address}";
+  
 }
